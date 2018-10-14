@@ -1,2 +1,0 @@
-class ValidPoint < ApplicationRecord
-end
