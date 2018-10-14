@@ -10,16 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_14_185318) do
-
-  create_table "actions", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 2018_10_14_200406) do
 
   create_table "actions_users", id: false, force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "action_id", null: false
+    t.integer "receiver"
   end
 
   create_table "grievances", force: :cascade do |t|
